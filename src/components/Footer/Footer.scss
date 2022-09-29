@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    
+    padding: 30px 0;
+    background-color: rgb(149, 168, 185);
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 200px;
+    }
+    .theme-footer {
+        display: flex;
+        gap: 30px;
+    }
+    .link-footer {
+        display: flex;
+        gap: 200px;
+    }
+    .link-title {
+        display: flex;
+        gap: 20px;
+    }
+    .link-data {
+        display: flex;
+        gap: 20px;
+    }
+}

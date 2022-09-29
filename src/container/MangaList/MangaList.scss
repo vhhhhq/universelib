@@ -1,0 +1,18 @@
+.manga {
+    display: flex;
+    align-items: center;
+    margin: 50px 100px;
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap: 50px;
+    }
+    .MangaContent-lib {
+        width: 20%;
+    }
+    .MangaTitle-lib {
+        width: 80%;
+    }
+}
