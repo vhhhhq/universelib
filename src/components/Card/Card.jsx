@@ -50,7 +50,6 @@ const Card = () => {
                 <span>Type</span>
             </dir>
         </div>
-        <button>now</button>
     </div>
   )
 }
