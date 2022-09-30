@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    .card-universelib {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 250px;
+        height: 350px;
+        border-radius: 8px;
+        padding: 10px;
+        border: none;
+        box-sizing: border-box;
+        background-color: rgb(149, 168, 185);
+    }
+    .card-universelib img {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        border: none;
+        border-radius: 8px;
+        width: 230px;
+        height: 250px;
+    }
+}

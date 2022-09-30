@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react'
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
@@ -9,15 +9,15 @@ import Information from '../../pages/Information/Information'
 import Chapter from '../../pages/Chapter/Chapter'
 import Comment from '../../pages/Comment/Comment'
 import Discussions from '../../pages/Discussions/Discussions'
-import { useEffect, useState } from 'react'
+
 
 
 const MangaTitle = () => {
   const [value, setValue] = React.useState(2);
 
   const [place, setPosts] = useState([])
-  
-  const fetchData = (props) => {
+    const fetchData = (props) => {
+
     fetch(`https://mangauniverse.herokuapp.com/manga-list/`)
       .then(response => {
         return response.json()
@@ -33,12 +33,13 @@ const MangaTitle = () => {
 
   if (!place) return
 
+
   return (
     <div className='mangaTitle'>
       <div className='content-lib'>
         <div className='manga-container-one'>
           <div className='title-manga'>
-          {place.results?.map(item=>(<h1>{item.russian_name}</h1>))}
+            <h1>Russian name</h1>
             <p>Name en</p>
           </div>
           <div>

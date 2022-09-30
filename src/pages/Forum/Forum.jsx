@@ -2,7 +2,7 @@ import React from 'react'
 import './Forum.scss'
 const Forum = () => {
   return (
-    <div>Forum</div>
+    <div></div>
   )
 }
 
