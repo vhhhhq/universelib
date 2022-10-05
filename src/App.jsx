@@ -8,7 +8,6 @@ import FAQ from './pages/FAQ/FAQ';
 import Footer from './components/Footer/Footer'
 
 import 'antd/dist/antd.css';
-// import MangaList from './container/MangaList/MangaList';
 import HomeManga from './container/HomeManga/HomeManga';
 
 
@@ -17,13 +16,13 @@ function App() {
     <div className="body">
       <Header/>
       <Routes>
+        <Route path='/' element={<HomeManga/>} />
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/search" element={<Search />} />
         <Route path="/forum" element={<Forum />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>
-      <HomeManga/>
-      {/* <MangaList/> */}
+      
       <Footer />
     </div>
   );

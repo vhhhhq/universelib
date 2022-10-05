@@ -15,25 +15,6 @@ import Discussions from '../../pages/Discussions/Discussions'
 const MangaTitle = () => {
   const [value, setValue] = React.useState(2);
 
-  const [place, setPosts] = useState([])
-    const fetchData = (props) => {
-
-    fetch(`https://mangauniverse.herokuapp.com/manga-list/`)
-      .then(response => {
-        return response.json()
-      })
-      .then(data => {
-        setPosts(data)
-      })
-  }
-  useEffect(() => {
-    fetchData()
-    console.log(place)
-  }, [])
-
-  if (!place) return
-
-
   return (
     <div className='mangaTitle'>
       <div className='content-lib'>
